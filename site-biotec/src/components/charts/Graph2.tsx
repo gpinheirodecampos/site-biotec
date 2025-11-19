@@ -24,12 +24,12 @@ export function Graph2() {
             top: 20,
             right: 20,
             bottom: 20,
-            left: 20,
+            left: 40,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-          <XAxis type="number" dataKey="x" name="Densidade" unit=" g/cm³" stroke="#888" />
-          <YAxis type="number" dataKey="y" name="Porosidade" unit=" m³/m³" stroke="#888" label={{ value: data.yAxisLabel, angle: -90, position: 'insideLeft', fill: '#888' }} />
+          <XAxis type="number" dataKey="x" name="Densidade" stroke="#888" label={{ value: 'Densidade (g/cm³)', position: 'bottom', offset: 0, fill: '#888' }} />
+          <YAxis type="number" dataKey="y" name="Porosidade" stroke="#888" label={{ value: data.yAxisLabel, angle: -90, position: 'insideLeft', fill: '#888', offset: 10 }} />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px', color: '#f3f4f6' }} />
           <Scatter name="Amostras" data={data.data} fill={data.colors[0]} animationDuration={2000} animationEasing="ease-out">
             <LabelList dataKey="name" position="top" style={{ fill: '#ccc' }} />

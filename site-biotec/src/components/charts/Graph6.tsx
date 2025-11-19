@@ -25,11 +25,19 @@ export function Graph6() {
             top: 20,
             right: 30,
             left: 20,
-            bottom: 5,
+            bottom: 70,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-          <XAxis dataKey={data.xAxisKey} stroke="#888" interval={0} tick={{fontSize: 12}} />
+          <XAxis 
+            dataKey={data.xAxisKey} 
+            stroke="#888" 
+            interval={0} 
+            angle={-45}
+            textAnchor="end"
+            tick={{fontSize: 11}} 
+            height={70}
+          />
           <YAxis yAxisId="left" orientation="left" stroke="#888" label={{ value: data.yAxisLabel, angle: -90, position: 'insideLeft', fill: '#888' }} />
           <YAxis yAxisId="right" orientation="right" stroke="#888" label={{ value: data.yAxis2Label, angle: 90, position: 'insideRight', fill: '#888' }} domain={[1.0, 1.4]} />
           <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '8px', color: '#f3f4f6' }} />

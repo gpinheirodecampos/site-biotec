@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ title, subtitle }: HeroSectionProps) {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center bg-background text-foreground snap-center">
+    <section className="relative h-screen flex flex-col overflow-hidden items-center justify-center bg-background text-foreground snap-center">
       <div className="absolute inset-0 z-0">
         <BackgroundPaths />
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/10 to-background pointer-events-none" />

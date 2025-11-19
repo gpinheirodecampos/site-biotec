@@ -40,7 +40,7 @@ export const TextReveal = ({ text, className = "", delay = 0 }: TextRevealProps)
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", flexWrap: "wrap" }}
+      style={{ display: "flex", flexWrap: "wrap" }}
       variants={container}
       initial="hidden"
       whileInView="visible"
