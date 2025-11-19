@@ -65,7 +65,7 @@ function App() {
           };
 
           return (
-            <div key={section.id} className="snap-start min-h-screen flex flex-col justify-center py-20 container mx-auto px-4 max-w-5xl">
+            <div key={section.id} className="snap-start min-h-screen flex flex-col justify-center pb-20 pt-8 container mx-auto px-4 max-w-5xl">
                <TextSection 
                   title={section.title} 
                   content={section.content || []} 

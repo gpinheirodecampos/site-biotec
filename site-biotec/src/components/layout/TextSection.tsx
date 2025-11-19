@@ -10,7 +10,7 @@ interface TextSectionProps {
 
 export function TextSection({ title, content, className }: TextSectionProps) {
   return (
-    <section className={cn("py-20 container mx-auto px-4 max-w-4xl", className)}>
+    <section className={cn("pb-20 pt-8 container mx-auto px-4 max-w-4xl", className)}>
       <div className="mb-8">
         <TextReveal 
           text={title}

@@ -17,7 +17,7 @@ export function StepsSection({ title, content }: StepsSectionProps) {
   const icons = [Microscope, Sprout, Droplets, Leaf];
 
   return (
-    <section className="py-20 container mx-auto px-4 max-w-6xl snap-center min-h-screen flex flex-col justify-center">
+    <section className="pb-20 pt-8 container mx-auto px-4 max-w-6xl snap-center min-h-screen flex flex-col justify-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
