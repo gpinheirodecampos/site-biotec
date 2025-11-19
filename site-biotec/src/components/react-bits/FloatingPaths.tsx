@@ -49,7 +49,7 @@ function FloatingPaths({ position }: { position: number }) {
 
 export default function BackgroundPaths() {
   return (
-    <div className="absolute inset-0 overflow-hidden flex items-center justify-center opacity-30">
+    <div className="absolute inset-0 flex items-center justify-center opacity-30">
         <div className="absolute inset-0 w-full h-full scale-150 transform rotate-12">
             <FloatingPaths position={1} />
             <FloatingPaths position={-1} />

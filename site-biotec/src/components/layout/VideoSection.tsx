@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export function VideoSection() {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-black snap-center">
+    <section className="relative h-screen flex flex-col items-center justify-center bg-black snap-center">
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
