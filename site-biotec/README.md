@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Biotec Ambiental - Relatório do Cerrado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web interativa desenvolvida para apresentar dados e informações sobre biotecnologia ambiental, com foco no bioma Cerrado.
 
-Currently, two official plugins are available:
+## 🚀 Deploy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto está implantado na Vercel e pode ser visualizado através do seguinte link:
+👉 **[https://site-biotec.vercel.app/](https://site-biotec.vercel.app/)**
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto foi construído utilizando as seguintes tecnologias modernas:
 
-## Expanding the ESLint configuration
+- **[React](https://react.dev/)** - Biblioteca JavaScript para construção de interfaces.
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset tipado de JavaScript.
+- **[Vite](https://vitejs.dev/)** - Build tool rápida e leve.
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first.
+- **[Shadcn UI](https://ui.shadcn.com/)** - Coleção de componentes de UI reutilizáveis.
+- **[Recharts](https://recharts.org/)** - Biblioteca de gráficos para React.
+- **[Framer Motion](https://www.framer.com/motion/)** - Biblioteca de animações.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Visualização de Dados**: Gráficos interativos para análise de dados ambientais.
+- **Design Responsivo**: Interface adaptável para diferentes tamanhos de tela.
+- **Modo Escuro**: Suporte a temas claro e escuro (Dark Mode).
+- **Animações**: Transições suaves e elementos interativos.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Como Rodar Localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Siga os passos abaixo para executar o projeto em sua máquina:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/gpinheirodecampos/TRABALHO.git
+   cd TRABALHO/site-biotec
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse no navegador**
+   O projeto estará disponível em `http://localhost:5173` (ou outra porta indicada no terminal).
+
