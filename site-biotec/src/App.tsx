@@ -2,9 +2,11 @@ import { useRef } from 'react';
 import { HeroSection } from './components/layout/HeroSection';
 import { TextSection } from './components/layout/TextSection';
 import { StepsSection } from './components/layout/StepsSection';
+import { InteractiveCardSection } from './components/layout/InteractiveCardSection';
 import { VideoSection } from './components/layout/VideoSection';
 import { Footer } from './components/layout/Footer';
 import { ProgressBar } from './components/layout/ProgressBar';
+import { ModeToggle } from './components/mode-toggle';
 import { reportContent } from './data/report-content';
 import { Graph1 } from './components/charts/Graph1';
 import { Graph2 } from './components/charts/Graph2';
@@ -17,7 +19,8 @@ function App() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div ref={containerRef} className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-background text-foreground font-sans selection:bg-green-500/30">
+    <div ref={containerRef} className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-background text-foreground font-sans selection:bg-green-500/30 relative">
+      <ModeToggle />
       <ProgressBar containerRef={containerRef} />
       {reportContent.map((section) => {
         if (section.type === 'hero') {
@@ -47,6 +50,17 @@ function App() {
               key={section.id}
               title={section.title}
               content={section.content || []}
+            />
+          );
+        }
+
+        if (section.type === 'interactive-cards') {
+          return (
+            <InteractiveCardSection 
+              key={section.id}
+              title={section.title}
+              content={section.content || []}
+              items={section.cardItems || []}
             />
           );
         }

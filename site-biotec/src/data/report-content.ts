@@ -85,6 +85,38 @@ export const reportContent: ReportSection[] = [
     ]
   },
   {
+    id: "mechanisms",
+    type: "interactive-cards",
+    title: "Como microrganismos descompactam o solo?",
+    content: ["Existem quatro mecanismos principais já comprovados em estudos brasileiros."],
+    cardItems: [
+      {
+        title: "Crescimento radicular",
+        description: "Hormônios que estimulam raízes.",
+        content: "Muitas bactérias do Cerrado, como Azospirillum e Bradyrhizobium, produzem hormônios como AIA, giberelinas e citocininas. Esses hormônios aumentam o número e o comprimento de raízes, estimulando-as a 'abrir caminho' físico no solo — um processo chamado bioturbação radicular.",
+        icon: "Sprout"
+      },
+      {
+        title: "Formação de agregados",
+        description: "Cola biológica (EPS).",
+        content: "Algumas bactérias e fungos produzem biopolímeros naturais chamados EPS (exopolissacarídeos). São moléculas pegajosas que funcionam como uma 'cola biológica', unindo grãos de solo em estruturas estáveis. Isso aumenta a macroporosidade em até 20% e reduz a densidade.",
+        icon: "Cuboid"
+      },
+      {
+        title: "Atividade micorrízica",
+        description: "Redes subterrâneas.",
+        content: "Fungos micorrízicos formam simbioses com raízes, criando uma malha de hifas que aumenta a absorção de água e fósforo, melhora a estrutura física do solo e facilita a penetração das raízes em profundidade. As hifas funcionam como fios biológicos, conectando partículas de solo.",
+        icon: "Network"
+      },
+      {
+        title: "Aumento da matéria orgânica",
+        description: "Alimento para a biologia.",
+        content: "Microrganismos ajudam a decompor resíduos de plantas e transformar matéria orgânica em húmus. Com mais matéria orgânica, o solo fica mais solto, a densidade diminui e a estrutura se regenera. É um ciclo virtuoso.",
+        icon: "Recycle"
+      }
+    ]
+  },
+  {
     id: "graph-6-section",
     type: "chart",
     title: "Efeitos da Inoculação",
@@ -95,14 +127,36 @@ export const reportContent: ReportSection[] = [
   },
   {
     id: "implementation",
-    type: "steps",
+    type: "interactive-cards",
     title: "Como implementar consórcios microbianos",
     content: [
-      "Se a ciência já mostrou que microrganismos podem reestruturar o solo do Cerrado, a pergunta agora passa a ser: como levar essa tecnologia para o campo, de forma prática e eficiente?",
-      "Seleção de microrganismos:Pesquisadores e biofábricas selecionam microrganismos com funções complementares.",
-      "Tratamento de sementes (TS):A forma mais eficiente e viável de aplicar microrganismos é via tratamento de sementes, já consagrado no cultivo de soja e feijão.",
-      "Aplicação no sulco:Em situações de compactação moderada a severa, o inoculante líquido é aplicado junto à semente.",
-      "Integração com plantas de cobertura:Microrganismos não fazem milagre sozinhos. Eles precisam de raízes para atuar. Por isso, a recuperação de solos compactados costuma usar braquiária, crotalária, feijão-guandu, etc."
+      "Se a ciência já mostrou que microrganismos podem reestruturar o solo do Cerrado, a pergunta agora passa a ser: como levar essa tecnologia para o campo, de forma prática e eficiente?"
+    ],
+    cardItems: [
+      {
+        title: "Seleção de microrganismos",
+        description: "O nascimento do consórcio.",
+        content: "O processo começa muito antes de chegar ao campo. Pesquisadores e biofábricas selecionam microrganismos com funções complementares: Azospirillum brasilense (hormônios), Bradyrhizobium japonicum (fixação de N), Bacillus subtilis (fósforo e EPS) e Fungos micorrízicos. Eles passam por testes de compatibilidade e sobrevivência.",
+        icon: "Microscope"
+      },
+      {
+        title: "Tratamento de sementes (TS)",
+        description: "A rota mais usada no Brasil.",
+        content: "A forma mais eficiente e viável é via tratamento de sementes. A semente é revestida com um gel contendo os microrganismos. Quando germina, já nasce acompanhada pelas bactérias e fungos que irão 'colonizar' a raiz, garantindo estabelecimento rápido e proteção precoce.",
+        icon: "Sprout"
+      },
+      {
+        title: "Aplicação no sulco",
+        description: "Para compactação moderada.",
+        content: "Em situações de compactação moderada a severa, o inoculante líquido é aplicado junto à semente no sulco de plantio, formando uma 'zona microbiana' inicial. Também pode ser feita aplicação superficial em pós-colheita para atuar sobre palhadas.",
+        icon: "Droplets"
+      },
+      {
+        title: "Integração com plantas",
+        description: "O segredo da técnica.",
+        content: "Microrganismos não fazem milagre sozinhos; eles precisam de raízes. A recuperação costuma usar braquiária, crotalária ou feijão-guandu. Essas plantas produzem raízes profundas, mantêm o solo coberto e alimentam os microrganismos com exsudatos.",
+        icon: "Leaf"
+      }
     ]
   },
   {
