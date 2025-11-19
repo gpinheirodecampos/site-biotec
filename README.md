@@ -19,6 +19,12 @@ O projeto foi construído utilizando as seguintes tecnologias modernas:
 - **[Recharts](https://recharts.org/)** - Biblioteca de gráficos para React.
 - **[Framer Motion](https://www.framer.com/motion/)** - Biblioteca de animações.
 
+## 🧠 Metodologia e IA
+
+Este projeto foi desenvolvido com o auxílio de Inteligência Artificial, aplicando conceitos de **SDD (Spec Driven Development)**.
+
+Utilizamos o **GitHub Spec Kit** para estruturar o desenvolvimento guiado por especificações, garantindo que o código gerado pela IA estivesse alinhado com os requisitos técnicos e de design definidos previamente. Essa abordagem permitiu uma implementação rápida, consistente e de alta qualidade.
+
 ## ✨ Funcionalidades
 
 - **Visualização de Dados**: Gráficos interativos para análise de dados ambientais.
